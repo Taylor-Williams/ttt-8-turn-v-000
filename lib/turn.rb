@@ -1,6 +1,6 @@
 def turn (board)
   puts "please enter 1-9:"
-  index = gets
+  index = gets.strip
   if valid_move? (board, index)
     move(board, index)
     display_board(board)
