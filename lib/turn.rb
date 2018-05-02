@@ -1,14 +1,25 @@
 def turn (board)
   puts "Please enter 1-9:"
-  index = (gets.strip)
-  index = index.to_i - 1
+  index = input_to_index(gets.strip)
+  if (index == -1)
+    error_message
+  else
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
   else
-    puts "that move is invalid, try another move!"
-    turn (board)
+    error_message
   end
+end
+
+def error_message
+  puts "that move is invalid, try another move!"
+  turn (board)
+end
+
+def input_to_index(stringdex)
+  index = stringdex.to_i
+  
 end
 
 def display_board (board)
