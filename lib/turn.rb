@@ -3,6 +3,7 @@ def turn (board)
   index = gets
   if valid_move? (board, index)
     move(board, index)
+    display_board(board)
   else
     puts "that move is invalid, try another move!"
     turn (board)
