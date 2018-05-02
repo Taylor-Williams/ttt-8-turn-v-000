@@ -11,7 +11,7 @@ def turn (board)
   end
 end
 
-def error_message
+def error_message (board)
   puts "that move is invalid, try another move!"
   turn (board)
 end
