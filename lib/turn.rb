@@ -18,7 +18,7 @@ def error_message
 end
 
 def input_to_index(stringdex)
-  index = stringdex.to_i
+  index = stringdex.to_i - 1
 end
 
 def display_board (board)
