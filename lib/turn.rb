@@ -19,7 +19,6 @@ end
 
 def input_to_index(stringdex)
   index = stringdex.to_i
-  
 end
 
 def display_board (board)
