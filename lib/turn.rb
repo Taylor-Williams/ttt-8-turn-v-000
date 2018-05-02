@@ -3,8 +3,7 @@ def turn (board)
   index = input_to_index(gets.strip)
   if (index == -1)
     error_message
-  else
-  if valid_move?(board, index)
+  elsif valid_move?(board, index)
     move(board, index)
     display_board(board)
   else
